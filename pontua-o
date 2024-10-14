@@ -1,0 +1,10 @@
+ font = pygame.font.SysFont(None, 35)
+            score_text = font.render(f'Score: {score}', True, BLACK)
+            screen.blit(score_text, [10, 10])
+        else:
+            font = pygame.font.SysFont(None, 75)
+            game_over_text = font.render('Game Over', True, BLACK)
+            screen.blit(game_over_text, [WIDTH // 4, HEIGHT // 3])
+            font = pygame.font.SysFont(None, 35)
+            restart_text = font.render('Press R to Restart', True, BLACK)
+            screen.blit(restart_text, [WIDTH // 4, HEIGHT // 2])
